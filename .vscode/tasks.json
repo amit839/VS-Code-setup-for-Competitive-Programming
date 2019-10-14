@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build main.cpp",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-Wshadow",
+                "-Wformat=2",
+                "-Wfloat-equal",
+                "-o",
+                "main",
+                "main.cpp",
+                "-DAKP"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
